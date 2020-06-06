@@ -18,7 +18,7 @@ exports.display = function (firstName, lastName, assignment) {
 	let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' + 
     new Date().toLocaleDateString('en-US')
 
-	return output  
+  return output  
 } 
 const header = require('./Massie-header.js');
 
