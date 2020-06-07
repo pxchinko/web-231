@@ -7,13 +7,6 @@
 ; Description: Displays name, date, temperature, and savings account goal
 ;===========================================
 */
-/*
-
-  Today's date is <today's date> and the current temperature is <33.6 - use the formatNumber function> degrees.
-
-  I am <your actual age - parsed int value> years old and my savings account goal is <your actual goal - parsed float value> dollars.
-
-*/
 
 // header
 exports.display = function (firstName, lastName, assignment) {
