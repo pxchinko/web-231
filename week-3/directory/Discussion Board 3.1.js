@@ -1,8 +1,8 @@
 /*=======================================
 ; Title: Discussion Board 3.1
-; Author: Professor Krasso
+; Author: Sarah Massie
 ; Date: 10 June 2020
-; Modify by: Sarah Massie
+; Modified by:
 ; Description: Javascript program using an if else statement with 2 errors.
 =======================================*/
 
