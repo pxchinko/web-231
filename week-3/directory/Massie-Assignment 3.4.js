@@ -8,6 +8,10 @@
 ;===========================================
 */
 
+// header
+const header = require('./Massie-header.js');
+console.log(header.display("Sarah", "Massie", "Massie-Assignment 3.4.js"));
+
 /**
  * Params: n/a
  * Response: integer value
