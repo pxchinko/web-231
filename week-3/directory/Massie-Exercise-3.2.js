@@ -2,18 +2,10 @@
 ============================================
 ; Title:  Massie-Exercise-3.2.js
 ; Author: Professor Krasso
-; Date:   11 June 2020
+; Date:   12 June 2020
 ; Modified By: Sarah Massie
 ; Description: Matching functions exercise
 ;===========================================
-*/
-/*
-  Expected output:
-
-  // output from the if...else blocks
-  Truck and Car do not match!
-  Bike and Bike do match!
-  Four and Three do not match!
 */
 
 // header
