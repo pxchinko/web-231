@@ -33,6 +33,8 @@
 const header = require('./Massie-header.js');
   console.log(header.display("Sarah", "Massie", "Exercise 4.3"));
 
+console.log("")
+
 var vehicle = ["Truck", "Car", "Airplane", "Bus", "Motorcycle"];
 
 // function
