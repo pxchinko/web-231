@@ -1,15 +1,11 @@
 /*
-  Expected output:
-
-  FirstName LastName
-  Exercise 4.2
-  Today's Date
-
-  Apple
-  Orange
-  Banana
-  Mango
-  Pear
+============================================
+; Title: Exercise-4.2.js
+; Author: Professor Krasso
+; Date: 17 June 2020
+; Modified By: Sarah Massie
+; Description: Printing an array of fruits
+;===========================================
 */
 
 // header
