@@ -4,7 +4,7 @@
 ; Author: Sarah Massie
 ; Date:   17 June 2020
 ; Modified by: 
-; Description: Program using an array with three errors
+; Description: Program using an array with four errors
 ;===========================================
 */
 
@@ -12,7 +12,7 @@
 const header = require('./Massie-header.js')
 console.log(header.display('Sarah','Massie','Discussion 4.1'))
 
-//program with three errors
+//program with four errors
 var vehicles = ["Chevrolet Spark", "Fiat 500", "Nissan Leaf", "Volkswagen Beetle", "Honda Fit"]  
 
 function getCuteCar(array, string) {
