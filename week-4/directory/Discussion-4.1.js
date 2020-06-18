@@ -1,9 +1,9 @@
 /*
 ============================================
 ; Title:  Discussion-4.1.js
-; Author: Sarah Massie
+; Author: Brooklyn Hairston
 ; Date:   17 June 2020
-; Modified by: Brooklyn Hairston
+; Modified by: Sarah Massie
 ; Description: program using an array with two errors
 ;===========================================
 */
