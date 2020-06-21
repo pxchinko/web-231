@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date: 20 June 2020
 ; Modified By: Sarah Massie
-; Description: 
+; Description: Filtering an array to find a specific output
 ;===========================================
 */
 
