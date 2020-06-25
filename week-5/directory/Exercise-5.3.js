@@ -48,5 +48,5 @@ const famousComposer = [
   // output
   console.log("\n" + "-- FAMOUS COMPOSERS --" + "\n")
 famousComposer.forEach( (composer) => {
-  console.log("Last Name: " + composer.lastName + " , " + "Genre: " + composer.genre + " , " + "Rating: " + composer.rating)
+  console.log("Last Name: " + composer.lastName + ", " + "Genre: " + composer.genre + ", " + "Rating: " + composer.rating)
 })
