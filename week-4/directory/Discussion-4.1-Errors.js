@@ -16,8 +16,8 @@ console.log(header.display('Sarah','Massie','Discussion 4.1'))
 var vehicles = ["Chevrolet Spark", "Fiat 500", "Nissan Leaf", "Volkswagen Beetle", "Honda Fit"]  
 
 function getCuteCar(array, string) {
-  for var v = 0, v < array.length, v++
-  { if array[v] === string
+  for (var v = 0; v < array.length; v++)
+  { if (array[v] === string)
       console.log(array[v]);
   }
 }

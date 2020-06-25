@@ -45,11 +45,6 @@ const famousComposer = [
   }
   ]
   
-  // return a new list of objects with only the lastName field
-  let lastName = famousComposer.map((singer) => {
-    return singer.lastName
-  })
-  
   // output
   console.log("\n" + "-- FAMOUS COMPOSERS --" + "\n")
 famousComposer.forEach( (composer) => {
