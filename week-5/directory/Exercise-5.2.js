@@ -3,7 +3,7 @@
 ; Title:  Exercise-5.2.js
 ; Author: Sarah Massie
 ; Date:   24 June 2020
-; Description: Demonstrates how to filter list of collection objects
+; Description: Demonstrates a quick list of foods
 ;===========================================
 */
 
