@@ -14,35 +14,35 @@ const header = require('./Massie-header.js');
 // object collection
 const famousComposer = [
 {
-      firstName: "Ludwig",
-      lastName: "Beethoven",
-      genre: "Classical",
-      rating: "9"
-    },
-    {
-      firstName: "Wolfgang",
-      lastName: "Mozart",
-      genre: "Classical",
-      rating: "6"
-    },
-    {
-      firstName: "Johann",
-      lastName: "Bach",
-      genre: "Classical",
-      rating: "4"
-    },
-    {
-      firstName: "Joseph",
-      lastName: "Haydn",
-      genre: "Classical",
-      rating: "7"
-    },
-    {
-      firstName: "Franz",
-      lastName: "Schubert",
-      genre: "Classical",
-      rating: "8"
-    }
+    firstName: "Ludwig",
+    lastName: "Beethoven",
+    genre: "Classical",
+    rating: "9"
+  },
+  {
+    firstName: "Wolfgang",
+    lastName: "Mozart",
+    genre: "Classical",
+    rating: "6"
+  },
+  {
+    firstName: "Johann",
+    lastName: "Bach",
+    genre: "Classical",
+    rating: "4"
+  },
+  {
+    firstName: "Joseph",
+    lastName: "Haydn",
+    genre: "Classical",
+    rating: "7"
+  },
+  {
+    firstName: "Franz",
+    lastName: "Schubert",
+    genre: "Classical",
+    rating: "8"
+  }
   ]
   
   // return a new list of objects with only the lastName field
