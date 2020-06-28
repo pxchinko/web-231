@@ -36,8 +36,9 @@
  	chords.set('A', 'La' )
  	chords.set('B', 'Ti' )
  	 
- 	 
  	for (let [key, value] of chords){
- 	console.log(key);
-	console.log(value); // removed console.log(key, value)
- 	}
+	console.log(value); // removed console.log(key) and console.log(key, value) to only output the notes, not the chords
+	 }
+	 
+	console.log(chords.get("C")); // deleted "key" so it wouldn't confuse the output since key is now not defined
+	// deleted the console.log(chords.get('Do')) since the value is undefined
