@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date:   25 June 2020
 ; Modified by: Sarah Massie
-; Description: Program using a list with three errors
+; Description: Filtering two arrays
 ;===========================================
 */
 
@@ -48,21 +48,21 @@ const famousComposer = [
   ]
 
 // filtering by genre
-let genres = famousComposer.map(composer => {
-    return (composer.genre, composer.lastName)
+let genres = famousComposer.map((composer) => {
+    return [composer.genre, composer.lastName];
 })
 
 // filtering by rating
-let ratings = famousComposer.map(composer => {
-    return (composer.rating, composer.lastName)
+let ratings = famousComposer.map((composer) => {
+    return [composer.rating, composer.lastName]
 })
 
 console.log("-- COMPOSER BY RATING --")
-ratings.forEach( function (rating, lastName) {
-    console.log("Rating: " + rating + '\n' + "Composer: " + lastName + '\n')
+ratings.forEach( function (composer) {
+    console.log("Rating: " + composer[0] + '\n' + "Composer: " + composer[1] + '\n')
 })
 
 console.log("-- COMPOSER BY GENRE --")
-genres.forEach( function (genre, lastName) {
-    console.log("Genre: " + genre + '\n' + "Composer: " + lastName + '\n')
+genres.forEach( function (composer) {
+    console.log("Genre: " + composer[0] + '\n' + "Composer: " + composer[1] + "\n");
 })
