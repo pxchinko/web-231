@@ -12,14 +12,12 @@ const header = require('./Massie-header.js');
   console.log(header.display("Sarah", "Massie", "Exercise 6.2"));
   console.log("");
 
-try {
-  var x = 5;
-  var y = 7;
-  var divided = x / y;
-
-if (x => 9) throw "This input is invalid.";
-if (x <= 9) throw "This input is valid."
-  console.log(divided);
+try { 
+  var text = "goodbye";
+  
+  if (text !== 'hello')
+  throw ("Oops, you didn't type hello");
+  console.log(text);
 } 
 catch (err) {
   console.log("Catch clause: " + err);
