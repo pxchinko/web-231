@@ -1,18 +1,15 @@
 /*
-  Ticket 105 was created on <today' date> and assigned to employee Bob Jones (Programmer I).
-*/
-/*
 ============================================
 ; Title:  Massie-Assignment-6.4.js
 ; Author: Sarah Massie
 ; Date:   30 June 2020
-; Description: Demonstrates an object with several properties
+; Description: Demonstrates an object with several properties and nesting object literals
 ;===========================================
 */
 
 // header
 const header = require('./Massie-header.js');
-  console.log(header.display("Sarah", "Massie", "Exercise 6.2"));
+  console.log(header.display("Sarah", "Massie", "Assignment 6.4"));
   console.log("");
 
 var ticket = {
@@ -26,10 +23,9 @@ var ticket = {
     firstName: "Bob",
     lastName: "Jones",
     jobTitle: "Programmer I",
-    fullName: function() {
+    fullName: function() { // created a function to make the bottom code cleaner
       return this.firstName + " " + this.lastName;
-    }
-  }
+    } }
 };
 
  
