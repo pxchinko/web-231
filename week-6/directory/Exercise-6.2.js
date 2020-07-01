@@ -16,7 +16,7 @@ try {
   var text = "goodbye";
   
   if (text !== 'hello')
-  throw ("Oops, you didn't type hello");
+  throw ("Oops, you didn't type hello.");
   console.log(text);
 } 
 catch (err) {
