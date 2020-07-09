@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Assignment-7.3.js
+; Title:  Exercise-7.2.js
 ; Author: Professor Krasso
 ; Date:   8 July 2020
 ; Modified by: Sarah Massie
