@@ -13,12 +13,55 @@
   <meta charset="UTF-8">
   <title>Exercise 7.3</title>
 
-  <!-- you will need to the href to point to your root directories css file -->
-  <link rel="stylesheet" href="/path/to/your/root/css/file">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
+  <div id="listA">
+    <script>
+    document.write("<h1>Shopping List V.1</h1>" +
+    "<ol>" +
+      "<li>Oranges</li>" +
+      "<li>Apples</li>" +
+      "<li>Pears</li>" +
+      "<li>Limes</li>" +
+      "<li>Lemons</li>" +
+    "</ol>")
+    </script>
+  </div>
+  
+  <div id="listB"></div>
 
-<div id="list"></div>
+<script>
+document.getElementById("listB").innerHTML = "<h2>Shopping List V.2</h2>" +
+  "<table>" +
+    "<thead>" +
+    "<tr>" + 
+      "<th>Id</th>" +
+      "<th>Item</th>" +
+      "</tr>" +
+    "</thead>" +
+    "<tr>" +
+      "<td>1</td>" +
+      "<td>Oranges</td>" +
+    "</tr>" +
+    "<tr>" +
+      "<td>2</td>" +
+      "<td>Apples</td>" +
+    "</tr>" +
+    "<tr>" +
+      "<td>3</td>" +
+      "<td>Pears</td>" +
+    "</tr>" +
+    "<tr>" +
+      "<td>4</td>" +
+      "<td>Limes</td>" +
+    "</tr>" +
+    "<tr>" +
+      "<td>5</td>" +
+      "<td>Lemons</td>" +
+    "</tr>" +
+    "</table>"
 
+</script>
 </body>
 </html>
