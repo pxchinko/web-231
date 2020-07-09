@@ -1,0 +1,53 @@
+<!--
+============================================
+; Title:  Discussion 7.1
+; Author: Sarah Massie
+; Date:   8 July 2020
+; Modified By: 
+; Description: HTML using DOM elements with errors
+;===========================================
+-->
+
+<!Doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Discussion 7.1</title>
+    </head>
+
+<body>
+    
+  <h1>Discussion 7.1</h1>
+    
+  <div id="main">
+    <p>This text is replaced.</p>
+</div>
+    
+    <h2 class="header">List of toy brands:</h2>
+    
+  <div id="toys">
+</div>
+    
+    
+<script>
+
+  document.getElementsByName("main").innerHTML = "Week 7 we discuss DOM elements in HTML.";
+
+  var toys = ["Polly Pocket", "Bratz", "Tamagotchi", "Barbie", "iDog", "Furby", "Power Rangers", "Pokemon", "My Little Pony"];
+    
+  function displayToys(toys) {
+    document.write("<ol>");
+  for (var i = 0; i < toys.length; i++) {
+ 	  toys.innerHTML += document.write("<li>" + toys[i] + "<li>"); }
+    document.write("< ol>");
+  }
+  
+  displayToys(toys);
+  document.getElementById("toys").innerHTML = toys
+
+    </script>
+
+    </body>
+</html>
