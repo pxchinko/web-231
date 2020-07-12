@@ -24,7 +24,7 @@ function Employee(id, first, last, title) {
 var employees = [
   new Employee(1, "Thomas", "Edison", "Software Engineer"),
   new Employee(2, "Benjamin", "Franklin", "Programmer"),
-  new Employee(3, "Nikola", "Tesla", "Project Manager"),
+  new Employee(3, "Nikolai", "Tesla", "Project Manager"),
   new Employee(4, "Charles", "Babbage", "Product Manager"),
   new Employee(5, "Alexander", "Bell", "Business Analyst"),
 ];

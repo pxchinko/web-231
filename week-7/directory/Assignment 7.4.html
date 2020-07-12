@@ -1,0 +1,79 @@
+<!--
+============================================
+; Title:  Assignment-7.4.js
+; Author: Professor Krasso
+; Date:   12 July 2020
+; Modified by: Sarah Massie
+; Description: Creating pop up alerts on href elements using inline Javascript
+;===========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+  
+<script src="Massie-header.js">
+  </script>
+  
+  <link rel="stylesheet" href="site.css">
+
+</head>
+  
+<body>
+  
+    <h1>Computer Components</h1>
+  <div id="myTable">
+  <table>
+    <thead>
+    <tr> 
+      <th>Id</th>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Functions</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>1</td>
+      <td>Laptop</td>
+      <td>1500.99</td>
+      <td><a href="javascript:editAlert(1)">EDIT</a> | <a href="javascript:editDelete()">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Motherboard</td>
+      <td>35.70</td>
+      <td><a href="javascript:editAlert(2)">EDIT</a> | <a href="javascript:editDelete()">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Monitor</td>
+      <td>174.99</td>
+      <td><a href="javascript:editAlert(3)">EDIT</a> | <a href="javascript:editDelete()">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Mouse</td>
+      <td>13.99</td>
+      <td><a href="javascript:editAlert(4)">EDIT</a> | <a href="javascript:editDelete()">DELETE</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Keyboard</td>
+      <td>14.50</td>
+      <td><a href="javascript:editAlert(5)">EDIT</a> | <a href="javascript:editDelete(this)">DELETE</a></td>
+    </tr>
+    </table></div>
+
+<script>
+  function editAlert(x) {
+    alert(x);
+
+}
+  function editDelete() {
+    alert("Are you sure?");
+  }
+</script>
+  
+</body>
+</html>
