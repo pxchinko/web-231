@@ -1,0 +1,79 @@
+<!--============================================
+; Title:  Exercise-8.2
+; Author: Professor Krasso
+; Date:   14 July 2020
+; Modified By:  Sarah Massie
+; Description: An unordered list with internal Javascript and CSS
+;===========================================-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: rgb(white);
+      margin: 0px auto;
+      max-width: 100%;
+    }
+    #topbar {
+      width: 100%;
+      height: 50px;
+      background-color: purple;
+    }
+    #fruits {
+      margin: auto;
+      padding-top: 20px;
+      background: white;
+      width: 200px;
+    }
+    ul {
+      list-style: none;
+      list-style-position: outside;
+    }
+  </style>
+</head>
+<body>
+  
+<div id="topbar"></div>
+ 
+<div id="fruits"></div>  
+
+<script>
+  
+var fruits = [
+  { id: 1,
+    type: "Apple"
+  },
+  { id: 2,
+    type: "Orange"
+  }, 
+  { id: 3,
+    type: "Lemon"
+  },
+  { id: 4,
+    type: "Lime"
+  },
+  { id: 5,
+    type: "Banana"
+}];
+
+var output = "<h2>Unordered List</h2>" +  
+    "<ul>"
+  
+for (var x = 0; x < fruits.length; x++) {
+  output += "<li>" + fruits[x].type + "</li>";
+  }
+  
+output += "</ul>";
+ 
+document.getElementById("fruits").innerHTML = output;
+
+</script>
+
+</body>
+</html>
