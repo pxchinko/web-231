@@ -16,59 +16,63 @@
 </head>
 
 <body>
-  <h1>Title</h1>
-  <button>Toggle</button>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-  Quisque at ultricies mi, a mollis mi. Etiam efficitur lorem et rutrum ultrices. 
-  Cras vestibulum vel turpis ut ultrices. Cras a quam ac velit mollis placerat quis in lectus. 
-  Mauris fringilla, arcu sit amet hendrerit varius, neque tellus ultrices arcu, 
-  sit amet semper nunc turpis vel nunc. Nulla pharetra vel ex id commodo. 
-  Pellentesque lacinia nisl id purus iaculis tincidunt. 
-  Integer et velit et nisl tristique tempus vel nec leo. Ut et nisi tempor, scelerisque arcu eu, 
-  fermentum nunc. Etiam interdum lacus sit amet nisl convallis hendrerit. Nam id euismod elit. 
-  Quisque posuere est justo. Vivamus rutrum nisi ligula, nec eleifend arcu pharetra vitae.</p>
+  
+  <div id="topbar"></div>
 
-<table>
-  <thead>
-    <tr> 
-      <th>Id</th>
-      <th>Type</th>
-      </tr>
-    </thead>
-    <tr>
-      <td>1</td>
-      <td>Laptop</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Motherboard</td>
-      </tr>
-    <tr>
-      <td>3</td>
-      <td>Monitor</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Mouse</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Keyboard</td>
-    </tr>
+<div id="page-container">
+  
+<div id="body-text">
+  <h1>Title</h1>
+  
+  <button>Toggle</button>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Quisque at ultricies mi, a mollis mi. Etiam efficitur lorem et rutrum ultrices. Cras vestibulum vel turpis ut ultrices. Cras a quam ac velit mollis placerat quis in lectus. Mauris fringilla, arcu sit amet hendrerit varius, neque tellus ultrices arcu, sit amet semper nunc turpis vel nunc. Nulla pharetra vel ex id commodo. Pellentesque lacinia nisl id purus iaculis tincidunt. Integer et velit et nisl tristique tempus vel nec leo. Ut et nisi tempor, scelerisque arcu eu, fermentum nunc. Etiam interdum lacus sit amet nisl convallis hendrerit. Nam id euismod elit. Quisque posuere est justo. Vivamus rutrum nisi ligula, nec eleifend arcu pharetra vitae.</p>
+</div>  
+
+<table id="fruitTable">
+  <tr>
+    <td><a href="#" class="fruitID">1</a></td>
+    <td>Apple</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitID">2</a></td>
+    <td>Orange </td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitID">3</a></td>
+    <td>Banana </td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitID">4 </a></td>
+    <td>Lemon </td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitID">5 </a></td>
+    <td>Lime </td>
+  </tr>
 </table>
 
+  </div>
+  
 <script type="text/javascript">
 $(document).ready(function(){
   $("button").click(function(){
     $("p").toggle();
-  });
-});
+}); });
 
 $(document).ready(function(){
   $("id").click(function(){
-    $()
-  });
-});
+    alert("")
+}); });
+
+$(function() {
+$(".fruitID").click(function(event) {
+  event.preventDefault();
+    var fruitID = $(this).text();
+    var fruitType = $(this).closest("td").next().text();
+    alert("{fruit_id: " + fruitID + ", fruit_type: " + fruitType + "}");
+}); });
 </script>
 
 </body>

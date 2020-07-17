@@ -1,0 +1,28 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(white);
+  margin: 0px auto;
+  max-width: 100%;
+}
+#topbar {
+  width: 100%;
+  height: 50px;
+  background-color: purple;
+}
+#page-container {
+  margin: auto;
+  padding: 20px 20px 0px;
+}
+#body-text {
+  max-width: 70%;
+}
+#fruitTable {
+  background: white;
+}
+#fruitTable tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+#fruitTable tr:hover {
+  background-color: #ddd;
+}
