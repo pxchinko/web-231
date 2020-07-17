@@ -1,0 +1,53 @@
+<!--============================================
+; Title:  Discussion-8.1
+; Author: Sarah Massie
+; Date:   16 July 2020
+; Modified By:  
+; Description: A simple HTML page with three jQuery errors
+;===========================================-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Discussion 8.1 jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    p{
+        padding: 20px;
+        font: 20px sans-serif;
+        background: #f2f2f2;
+    }
+    p.highlight{
+        background: pink;
+    }
+</style>
+<script>
+  // one error below
+$(document).ready(function(){
+  $("#num1").hover(function(){
+    $("#num1").addClass("highlight");
+  }, function(){
+    $(this).removeClass("highlight");
+  });
+});
+  // one error below
+$(document).ready(function(){
+  $("#num2").onclick(function(){
+    $(this).hide();
+  });
+});
+  // one error below
+$(document).ready(function(){
+  $("#num3").click(function {
+    $(this).slideUp("fast");
+  });
+});
+</script>
+</head>
+<body>
+    <p id="num1">Hover on me to highlight.</p>
+    <p id="num2">Click on me to hide.</p>
+    <p id="num3">Click on me to slide up.</p>
+</body>
+</html>
