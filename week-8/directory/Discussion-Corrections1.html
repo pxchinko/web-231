@@ -1,0 +1,79 @@
+<!-- ===========================================
+ 	; Title: Discussion Board 8.1 - DOM Manipulation (jQuery)
+ 	; Author: Arlix Sorto
+ 	; Date: 7/14/2020
+ 	; Modified By: 
+ 	; Description: Errors
+ 	;=========================================== 
+ 	 
+ 	-->
+ 	 
+<html lang="en">
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+ 	.blue_btn {
+ 	background-color: red;
+ 	height: 150px;
+ 	}
+ 	.red_btn {
+ 	background-color: green;
+ 	height: 150px;
+ 	}
+ 	.yellow_btn {
+ 	background-color: blue;
+ 	height: 150px;
+ 	}
+ 	 
+ 	.button_container {
+ 	display: inline-block;
+ 	height: 500px;
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	}
+ 	.toggle_button {
+ 	width: 150px;
+ 	height: 150px;
+ 	}
+ 	</style>
+</head>
+  <body>
+<h2>Each color will hide or show when hovering over them.</h2>
+  <br />
+<div class="button_container">
+<div class="button blue_btn"></div>
+<div class="button red_btn"></div>
+<div class="button yellow_btn"></div>
+</div>
+  <h2>This button will hide or show all the colors and change the text of the button on each click.</h2>
+<br />
+ 	<button class="toggle_button">Hide colors</button> 	 
+<script>
+// Jquery: Each color will hide or show when hovering over them.
+// Changed # to $ for correct jQuery syntax
+$(".toggle_button").hover(
+  function () {
+    $(this).css({
+      opacity: 0.0,});
+},
+  function () {
+ 	$(this).css({opacity: 1.0});
+});
+ 	 
+// Jquery: Hide or show all the colors and change the text of the button on each click.
+  
+$(document).ready(function() { 
+  $(".toggle_button").click(function () {
+    // change $(this) to the class name to direct the elements correctly
+ 	if ($(this).text() === 'Hide colors') {
+ 	$(".toggle_button").text('Show colors');
+ 	} else {
+ 	$(".toggle_button").text('Hide colors');
+ 	}
+  // .button to .button_container to toggle the correct element
+    $(".button_container").toggle();
+  })});
+ 	</script>
+ 	</body>
+ 	</html>
