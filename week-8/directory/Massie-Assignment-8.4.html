@@ -1,3 +1,10 @@
+<!--============================================
+; Title:  Massie-Assignment-8.4
+; Author: Professor Krasso
+; Date:   17 July 2020
+; Modified By:  Sarah Massie
+; Description: Putting it all together
+;===========================================-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +14,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- you will need to the href to point to your root directories css file -->
-  <link rel="stylesheet" href="/path/to/your/root/css/file">
+  <link rel="stylesheet" href="exercise8-4.css">
 
   <style type="text/css">
-    #employee tbody tr:hover {
+    tbody tr:hover {
       cursor: pointer;
       background-color: #ffff99;
     }
@@ -21,14 +28,59 @@
 <div id="emps"></div>
 
 <script type="text/javascript">
+// employee function
+function Employee(id, first, last, title) {
+  this.idNumber = id;
+  this.firstName = first;
+  this.lastName = last;
+  this.title = title;
+};
+var employees = [
+  new Employee(1, "Thomas", "Edison", "Software Engineer"),
+  new Employee(2, "Benjamin", "Franklin", "Programmer"),
+  new Employee(3, "Nikolai", "Tesla", "Project Manager"),
+  new Employee(4, "Charles", "Babbage", "Product Manager"),
+  new Employee(5, "Alexander", "Bell", "Business Analyst"),
+];
+function getEmployee(id) {
+  for (var i = 0; i < employees.length; i++) {
+    if (id === employees[i].idNumber) {
+      alert(employees[i].idNumber + " " + 
+      employees[i].firstName + " " + 
+      employees[i].lastName + " " + 
+      employees[i].title);
+    }
+  }
+};
+var output = "<table>" +
+    "<thead>" +
+      "<tr>" +
+      "<th>Id</th>" +
+      "<th>First Name</th>" +
+      "<th>Last Name</th>" +
+      "<th>Title</th>" +
+      "</tr>" +
+      "</thead>" +
+      "<tbody>" +
+      "</tbody>" +
+      "</table>";
+document.getElementById("emps").innerHTML = output;
 
-  // jQuery onClick event
-  // Don't remove this, just add your code to the body of the event (curly braces)
-  $(function () {
-    $("table tr").click(function () {
-
-    })
-  });
+for (var e = 0; e < employees.length; e++) {
+  var employeeInfo = "<tr>" + "<td>" + employees[e].idNumber + "</td>" + 
+    "<td>" + employees[e].firstName + "</td>" + 
+    "<td>" + employees[e].lastName + "</td>" +
+    "<td>" + employees[e].title + "</td>" + "</tr>";
+    // jQuery append <td>
+  $("tbody").append(employeeInfo); 
+  };   
+// jQuery onClick event
+$(function() {
+  $("table tr").click(function() {  
+    var employeeId = parseInt($(this).find("td:first").html());
+    getEmployee(employeeId);
+  })
+});
 </script>
 </body>
 </html>
